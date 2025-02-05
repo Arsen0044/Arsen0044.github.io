@@ -1,0 +1,325 @@
+/* Загальні стилі */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Контейнер для всього сайту */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Шапка сайту */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+
+header .logo a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Інформаційний блок на головній сторінці */
+#home {
+    background-color: #fff;
+    padding: 40px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#home h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#home p {
+    font-size: 18px;
+    color: #555;
+}
+
+/* Основний контент на сторінках */
+section {
+    margin-top: 40px;
+}
+
+/* Фотографія профілю та інші зображення */
+.profile-photo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+#profile-info {
+    background-color: #fff;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Контейнер для вмісту: Біографія, Група, Хобі */
+.profile-content {
+    flex: 1;
+}
+
+/* Стилі для окремих елементів: Біографія, Група, Хобі */
+.info-item {
+    margin-bottom: 20px;
+}
+
+.info-item p {
+    font-size: 18px;
+    color: #555;
+}
+
+.info-item a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.info-item a:hover {
+    text-decoration: underline;
+}
+
+/* Рекламний блок */
+.advertisement {
+    background-color: #e0e0e0;
+    padding: 20px;
+    width: 30%;
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* Стилі для секції біографії */
+#bio {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+}
+
+/* Контейнер для біографії (фото + текст) */
+.bio-content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+#bio p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+}
+
+#bio h1 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#group h1 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#hobbies h1 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#interesting h1 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+/* Контейнер для кожної пари фото + стаття */
+#interesting .articles-container {
+    display: flex;
+    justify-content: space-between;  /* Розташування фото і статей по горизонталі */
+    gap: 20px;  /* Відступи між блоками */
+    margin-top: 20px;
+}
+
+/* Стилі для кожної пари статті і фото */
+#interesting .article {
+    display: flex;
+    flex-direction: row;  /* Вирівнювання: зображення зверху, текст знизу */
+    align-items: center;  /* Вирівнювання по центру */
+    flex: 1;  /* Кожен блок займає рівну ширину */
+}
+
+/* Стилі для зображення */
+#interesting .article img {
+    width: 100%;  /* Зображення займає всю доступну ширину */
+    max-width: 250px;  /* Максимальна ширина зображення */
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;  /* Відступ між зображенням і текстом */
+}
+
+/* Стилі для тексту статей */
+#interesting .article p {
+    font-size: 18px;
+    color: #555;
+    text-align: center;  /* Текст вирівнюється по центру */
+    margin-left: 10px;
+}
+
+#advertisements {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+/* Стилі для кожного рекламного блоку */
+#advertisements .advertisement {
+    background-color: #e0e0e0;
+    padding: 20px;
+    width: 30%;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.hobby-advertisement {
+    background-color: #e0e0e0;
+    padding: 40px;
+    width: 100%;
+    height: 800px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 30px 0;
+    display: flex;
+    justify-content: center; /* Вирівнювання по горизонталі */
+    align-items: center; /* Вирівнювання по вертикалі */
+    text-align: center;
+}
+
+.flexible-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+/* Футер */
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    margin-top: 40px;
+    border-radius: 8px;
+}
+
+/* Адаптивність */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    nav ul li {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    #home h1 {
+        font-size: 28px;
+    }
+
+    .profile-photo {
+        width: 150px;
+        height: 150px;
+    }
+
+    #profile-info {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .advertisement {
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    .profile-content {
+        margin-bottom: 20px;
+    }
+
+    .bio-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #advertisements {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #advertisements .advertisement {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
